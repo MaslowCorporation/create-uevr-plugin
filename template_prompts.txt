@@ -1,0 +1,7 @@
+[
+  {
+    "type": "input",
+    "name": "FunctionName",
+    "message": "Name your UEVR plugin (The name MUST be in capital letters for now, I'll fix this inconvenience soon, sorry ;-)"
+  }
+]

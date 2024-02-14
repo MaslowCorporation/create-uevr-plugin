@@ -1,0 +1,20 @@
+{
+    "name": "create-uevr-plugin",
+    "version": "1.0.0",
+    "description": "A Node.js program / command line prompting tool / template creation tool, that can be used in MaslowGPT !",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "reset-main-branch": "git checkout --orphan latest_branch && git add -A && git commit -am \"First commit ;-)\" && git branch -D main && git branch -m main && git push -f --set-upstream origin main",
+        "first-push": "npm run git-init && git add . && git commit -m \"first commit\" && git branch -M main && git remote add origin https://github.com/MaslowCorporation/create-uevr-plugin.git && git push -u origin main",
+        "first-push-dev": "npm run git-init && git add . && git commit -m \"first commit\" && git branch -M main && git remote add origin https://github.com/MaslowCorporation/create-uevr-plugin.git && git push -u origin main",
+        "git-init": "rimraf .git && git init",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "push": "(git add . && git commit -m \"I'm a bigger pusher than Ice-T homie !!!\" && git push) || exit 0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "rimraf": "^5.0.1"
+    }
+}
